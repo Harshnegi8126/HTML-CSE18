@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>E-Commerce Cart page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+            
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            gap: 20px;
+
+            
+        }
+        .card{
+             background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,1);
+            /* width: 220px; */
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            
+
+        }
+        .card img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        @media(max-width:1200px){
+          .grid{
+            grid-template-columns: repeat(2,1fr);
+          }
+        }
+        @media (max-width:600px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <center><h2>E-commerce  cart</h2></center>
+    <div class="grid">
+        <div class="card">
+           <img src="premium t shirt.webp" width="300px" alt="Product1">
+           <h3>Product 1</h3>
+           <p>This is preminum clothes </p>
+           <p>&#8377; 799</p>
+        </div>
+         <div class="card">
+           <img src ="laptop.webp" width ="300px" alt = "product 2">
+            <h3> Product 2 </h3>
+             <p> This is laptop</p>
+           <p> ₹ 120000 </P>
+          </div>
+          <div class="card">
+           <img src ="earbud.jpeg" width ="300px" alt = "product 2">
+            <h3> Product 3 </h3>
+             <p> This is earbuds</p>
+           <p> ₹ 1200 </P>
+          </div>
+
+        </div>
+    </div>
+    </body>
+</html>
